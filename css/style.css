@@ -1,0 +1,807 @@
+   :root {
+    --primary: #b6895b;
+    --bg: #010101;
+    --text: #77438f;}
+    
+   
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    scroll-behavior: smooth;}    
+
+    body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #010101;
+    padding: 0;
+    margin: 0;
+     /* min-height: 10000px;  */
+    }
+     img{
+        max-width: 100%;;
+     }
+
+     /* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(1, 1, 1, 0.8);
+    border-bottom: 1px solid #83407f;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    font-style: italic;
+}
+
+.navbar .navbar-logo span {
+    color: var(--text);
+}
+
+.navbar .navbar-nav a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+    color: var(--text);
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--text);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(1, 1, 1, 0.8);
+    border-bottom: 1px solid #83407f;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    font-style: italic;
+}
+
+.navbar .navbar-logo span {
+    color: var(--text);
+}
+
+.navbar .navbar-nav a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+    color: var(--text);
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--text);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(100, 43, 115, 1) 0%, rgba(4, 0, 4, 1) 90%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+       background: linear-gradient(0deg, rgb(1, 1, 3, 1) 3%,rgba(255,255,255,0) 25%);
+}
+
+.hero .content1{
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+}
+
+.content1 span {
+    color: #f80707;
+    text-shadow: 2px 2px 2px #010101;
+    animation: textShadowAnimation 2s infinite;
+}
+
+.content1 h1 {
+    color: #bd2779;
+    text-shadow: 4px 2px 2px #010101, 3px -4px 0 #fff; /* Efek shadow */
+    text-decoration: underline;
+    text-decoration-color: #fff;
+    font-size: 3rem;
+    animation: textShadowAnimation 2s infinite; /* Menerapkan animasi */
+}
+
+.content1 p {
+    color: #cc78a6;
+    text-shadow: 3px 3px 3px #010101;
+    text-decoration: none;
+    font-size: 20px;
+    animation: CannonVibration 1s infinite
+}
+
+.Shape{
+    width: 200px;
+    margin-left: auto;
+}
+
+.text1 h3{
+   color: red;
+}
+
+/* ... CSS sebelumnya ... */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+    /* Animasi rotasi untuk Logo-91 */
+    .Logo-91 {
+        width: 350px;
+        position: absolute;
+        top: 30rem;
+        right: 55rem;
+        z-index: 1;
+        animation: rotate 8s linear infinite ;
+        animation: logoAnimation 3s linear infinite;
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes logoAnimation {
+    0% {
+        transform: translateY(2px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(2px) rotate(360deg);
+    }
+}
+
+    @keyframes shapeAnimation {
+    0% {
+        transform: translateY(4px);
+    }
+    50% {
+        transform: translateY(-4px);
+    }
+    100% {
+        transform: translateY(4px);
+    }
+}
+
+.Shape{
+    width: 350px;
+    position: absolute;
+    top: 10rem;
+    right: 11rem;
+    z-index: 1;
+    animation: shapeAnimation 3s infinite;
+    }
+    
+/* ... CSS setelahnya ... */
+
+
+.Percobaan {
+    width: 200px; /* Sesuaikan ukuran sesuai kebutuhan */
+    margin-left: auto; /* Mendorong gambar ke kanan */
+}
+
+.Percobaan {
+width: 450px; /* Sesuaikan ukuran sesuai kebutuhan */
+position: absolute; /* Mengatur posisi absolut */
+top: 1rem; /* Menggeser ke bagian atas */
+right: 7em; /* Menggeser ke bagian kanan */
+z-index: 2;
+animation: CannonVibration 1s infinite
+}
+
+.text-tutor{
+    text-align: center;
+    color: #ae00ff;
+    font-size: 20px;
+    position: absolute;
+    top: 35rem;
+    right: 20rem;
+    text-shadow: 3px 3px 3px #fff;
+
+}
+
+/* About Section */
+.about{
+    padding: 10rem 7% 1.4rem;
+}
+
+.about .content h3{
+    color: var(--text);
+    text-shadow: 3px 3px 3px ;
+    text-decoration: underline #fff;
+    animation: textShadowAnimation 4s infinite;
+}
+
+.about .content p{
+    color: var(--text);
+    text-shadow: 3px 3px 3px ;
+    text-decoration: underline #fff;
+    animation: textShadowAnimation 4s infinite;
+
+}
+
+.about h2{
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+    color: #010101;
+}
+
+.about h2 span{
+    color: var(--bg);
+}
+
+.about-img{
+    width: 70rem;
+    text-align: center;
+    animation: CannonVibration 1.5s infinite;
+}
+
+.about h3{
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.about p{
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+}        :root {
+    --primary: #b6895b;
+    --bg: #010101;
+    --text: #77438f;
+}
+
+.text2{
+    color: #77438f;
+    text-shadow: 3px 3px 4px #911ac9;
+    right: 4rem;
+    position: absolute;
+    top: 66rem;
+    font-size: 0.8rem;
+    rotate: 10deg;
+}
+
+.arrow{
+    width: 150px;
+    position: absolute;
+    right: 20rem;
+    top: 72rem;
+}
+
+.Absen-PBB{
+    width: 45rem;
+    rotate: 25deg;
+    position: absolute;
+    right: 6rem;
+    top: 140rem;
+}
+
+.text5 {
+    text-align: center;
+    position: absolute;
+    right: 36%;
+    top: 177rem;
+    text-shadow: 3px 3px 3px #fff;
+    animation: textShadowAnimation 4s infinite;
+    color: var(--text);
+}
+
+@keyframes textShadowAnimation {
+    0% {
+        text-shadow: 3px 3px 3px #fff;
+    }
+    25% {
+        text-shadow: 8px 8px 8px  #83407f; /* Shadow berubah menjadi merah */
+    }
+    50% {
+        text-shadow: 3px 3px 3px #fff;
+    }
+    75% {
+        text-shadow: 8px 8px 8px var(--text); /* Shadow berubah menjadi hijau */
+    }
+    100% {
+        text-shadow: 3px 3px 3px #fff;
+    }
+}
+
+
+.roket {
+    position: absolute;/* Posisi awal di atas */
+    animation: rocketAnimation 2.5s infinite ; /* Animasi selama 3 detik */
+
+}
+
+@keyframes rocketAnimation {
+    0%, 100% {
+        top: 130rem; /* Posisi awal dan akhir di atas */
+    }
+    50% {
+        top: 135rem; /* Posisi tengah di bawah */
+    }
+}
+
+.Absen-Upacara{
+    width: 50rem;
+    position: absolute;
+    top: 195rem;
+    rotate: -25deg;
+}
+
+.text6{
+    color: var(--text);
+    position: absolute;
+    top: 200rem;
+    right:  10rem;
+    rotate: 10deg;
+    text-shadow: 3px 3px 3px #fff;
+    animation: textShadowAnimation1 4s infinite;
+}
+
+@keyframes textShadowAnimation1 {
+    0% {
+        text-shadow: 3px 3px 3px #fff;
+    }
+    25% {
+        text-shadow: 8px 8px 8px #ae00ff; /* Shadow berubah menjadi merah */
+    }
+    50% {
+        text-shadow: 3px 3px 3px #fff;
+    }
+    75% {
+        text-shadow: 8px 8px 8px var(--text); /* Shadow berubah menjadi hijau */
+    }
+    100% {
+        text-shadow: 3px 3px 3px #fff;
+    }
+}
+
+/* Contact Section */
+@keyframes textShadowAnimation2{
+    0% {
+        text-shadow: 3px -4px 0 #fff; /* Posisi awal */
+    }
+    25% {
+        text-shadow: 3px -4px 0 #fff; /* Tidak ada perubahan */
+    }
+    50% {
+        text-shadow: 0 -4px 0 #fff; /* Geser 4px ke kiri */
+    }
+    75% {
+        text-shadow: 3px -4px 0 #fff; /* Tidak ada perubahan */
+    }
+    100% {
+        text-shadow: 3px -4px 0 #fff; /* Posisi akhir */
+    }}
+
+.contact h1{
+    color: var(--text);
+    position: absolute;
+    text-align: center;
+    top: 247rem;
+    right: 30%;
+    font-size: 3rem;
+    animation: textShadowAnimation2 4s infinite alternate;
+}
+
+@keyframes MinionAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(4px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.Minion {
+    width: 27rem;
+    position: absolute;
+    top: 205rem;
+    right: 4rem;
+    animation: MinionAnimation 2s infinite;
+}
+
+@keyframes CannonVibration {
+    0% {
+        transform: translate(0, 0);
+    }
+    20% {
+        transform: translate(0, -1px);
+    }
+    40% {
+        transform: translate(-1px, 0);
+    }
+    60% {
+        transform: translate(1px, 0);
+    }
+    80% {
+        transform: translate(0, 1px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.Minion-Cannon {
+    width: 38rem;
+    position: absolute;
+    top: 228rem;
+    right: 40rem;
+    animation: CannonVibration 1s infinite;
+    rotate: -10deg;
+}
+
+/* Images IX.1 */
+.Foto{
+    width: 45rem;
+    position: absolute;
+    top:280rem;
+    left: 5rem;
+    rotate: -15deg;
+    animation: CannonVibration 1.5s infinite;
+    box-shadow: 4px -4px 3px #fff;
+}
+
+.Foto2{
+   width: 44rem;
+   position: absolute;
+   top: 260rem;
+   right:  5rem;
+   rotate: 15deg;
+   box-shadow: 4px -4px 3px #fff;
+   animation: CannonVibration 1.6s infinite;
+}
+
+.Foto3{
+    width: 50rem;
+    position: absolute;
+    top: 320rem;
+    right: 7rem;
+    rotate: 10deg;
+    box-shadow: 4px -4px 3px #fff;
+   animation: CannonVibration 1.6s infinite;
+}
+
+.Foto4{
+   width: 47rem;
+   position: absolute;
+   top: 350rem;
+   left:  5rem;
+   rotate: -15deg;
+   box-shadow: 4px -4px 3px #fff;
+   animation: CannonVibration 1.6s infinite;
+}
+
+.Foto5{
+   width: 47rem;
+   position: absolute;
+   top: 380rem;
+   right:  5rem;
+   rotate: 10deg;
+   box-shadow: 4px -4px 3px #fff;
+   animation: CannonVibration 1.6s infinite;
+}
+
+.Foto6{
+   width: 47rem;
+   position: absolute;
+   top: 410rem;
+   right:  34rem;
+   rotate: -15deg;
+   box-shadow: 4px -4px 3px #fff;
+   animation: CannonVibration 1.6s infinite;
+}
+
+.Foto7{
+   width: 47rem;
+   position: absolute;
+   top: 440rem;
+   left:  34rem;
+   rotate: 17deg;
+   box-shadow: 4px -4px 3px #fff;
+   animation: CannonVibration 1.6s infinite;
+}
+
+.Foto8{
+   width: 47rem;
+   position: absolute;
+   top: 470rem;
+   left:  4rem;
+   rotate: -10deg;
+   box-shadow: 4px -4px 3px #fff;
+   animation: CannonVibration 1.6s infinite;
+}
+
+.text7{
+    color: var(--text);
+    text-align: center;
+    position: absolute;
+    top: 270rem;
+    rotate:  -9deg;
+    left: 1rem;
+    text-shadow: 3px 3px 3px #fff;
+    animation: CannonVibration 1.5s infinite;
+    font-size: 14px;
+}
+
+.text8{
+    color: var(--text);
+    position: relative;
+    top: 343rem;
+    text-align: center;
+    right: 20rem;
+    rotate: -12deg;
+    text-shadow: 3px 3px 3px #fff;
+    animation: CannonVibration 1.7s infinite;
+    font-size: 14px;
+}
+
+.text9{
+    color: var(--text);
+    position: absolute;
+    top: 500rem;
+    text-align: center;
+    right: 1rem;
+    rotate: 15deg;
+    animation: textShadowAnimation 3s infinite;
+    font-size: 14px;
+}
+
+/* Footer */
+footer{
+    background-color: var(--primary);
+    text-align: center;
+    padding: 2.5rem 0;
+    margin-top: 3rem;
+    top: 450rem;
+    position: relative;
+}
+
+.last-text{
+    color: var(--text);
+    text-shadow: 3px 3px 3px #fff;
+}
+
+@keyframes colorBlink {
+    0% { color: purple; }
+    25% { color: blue; }
+    50% { color: yellow; }
+    75% { color: blue; }
+    100% { color: purple; }
+}
+
+
+.text-gerak{
+    color: red;
+    animation: colorBlink 1s infinite;
+}
+
+.container {
+            width: 100%rem; /* Ubah ukuran sesuai kebutuhan */
+            height: 40px; /* Ubah ukuran sesuai kebutuhan */
+            border: 5px dotted white; /* Mengatur garis titik-titik dan warna putih */
+            position: relative;
+            font-size: 1.5rem;
+            text-shadow: 3px 3px 3px #fff;
+}
+
+/* Media Queries */
+/* 360px */
+@media (max-width: 360px){
+   html{
+    font-size: 30.4%;
+    .Logo-91{
+        width: 35%;
+        top: 92rem;
+        left: 5rem;
+        z-index: 0;
+    }
+     .content1 h1{
+      font-size: 16px;
+    }
+    .content1 p{
+        font-size: 12px;
+    }
+    .Percobaan{
+        width: 45%;
+        top: 70rem;
+        right: 1.5rem;
+    }
+    .Shape{
+        width: 37%;
+        top: 79rem;
+        right: 5.5rem;
+    }
+    .text-tutor{
+        font-size: 10px;
+        top: 105rem;
+        right: 10.5rem;
+    }
+    .arrow{
+        display: none;
+    }
+    .text2{
+        display: none;
+    }
+    .roket{
+        width: 35%;
+        top: 300rem;
+    }
+    .about-img{
+        width: 60rem;
+        top: 120rem;
+        position: absolute;
+    }
+    .Absen-PBB{
+        width: 45%;
+        top: 190rem;
+        rotate: 10deg;
+        right: 20.5px;
+    }
+     .Absen-Upacara{
+        width: 45rem;
+        top: 220rem;
+    } 
+    .contact h1{
+        top: 263rem;
+        right: 15.5px;
+    }
+    .Minion-Cannon{
+        top: 247rem;
+        left: 2.5px;
+        rotate: -15deg;
+    }
+    .content h3 {
+        rotate: -10deg;
+        position: absolute;
+        right: 43.5rem;
+        top: 125rem;
+    }
+    .content p{
+        rotate: -10deg;
+        right: 40.5rem;
+        position: absolute;
+        top: 130.2rem;
+    }
+     .container{
+        font-size: 4rem;
+        height: 40px;
+        top: 10rem;
+    } 
+    .text6{
+        top: 220rem;
+        right: 10.5px;
+    }
+    .Minion{
+        top: 225rem;
+        right: 6px;
+    }
+    .text5{
+        right: 5rem;
+        rotate: 10deg;
+        top: 165rem;
+    }
+    .text7{
+        font-size: 6px;
+        color: #854480;
+    } 
+    .text8{
+        font-size: 8px;
+        top: 314rem;
+        right: 7.5rem;
+    } 
+    .text9{
+        top: 576rem;
+        font-size: 1.6rem;
+        right: 10.5rem;
+    }
+    .Foto{
+        rotate: -7deg;
+        top: 284rem;
+    }
+    .Foto2{
+        top: 320rem;
+        left: 17.5rem;
+    }
+    .Foto3{
+        top: 360rem;
+    }
+    .Foto4{
+        top: 390rem;
+    }
+    .Foto5{
+        top: 420rem;
+    }
+    .Foto6{
+        top: 450rem;
+        right: 18.5rem;
+    }
+    .Foto7{
+        top: 480rem;
+        left: 18.5rem;
+    }
+    .Foto8{
+        top: 530rem;
+    }
+    .navbar .navbar-nav a{
+        display: none;
+    }
+    .navbar .navbar-logo{
+        font-size: 2.3rem;
+    }
+ }
+}
+/*  */
